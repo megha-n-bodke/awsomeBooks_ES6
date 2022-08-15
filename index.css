@@ -1,0 +1,130 @@
+.booksPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.header-section ul {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  list-style: none;
+  padding-right: 20px;
+}
+
+.header-section ul li {
+  margin-left: 15px;
+}
+
+.date-section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.bookdata {
+  display: block;
+}
+
+.dataForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactSec {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#display > div:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+.dataFields {
+  margin-bottom: 10px;
+}
+
+#emptySpan {
+  color: red;
+}
+
+.bookDetails {
+  display: flex;
+  flex-direction: row;
+}
+
+.data {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid black;
+  padding: 0 20px;
+}
+
+#btn {
+  width: 10%;
+  height: 30px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  height: 25px;
+  width: 250px;
+}
+
+.footer-section {
+  border: 1px solid black;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.footer-section p {
+  padding: 0 20px;
+}
+
+.contact-section {
+  border: 1px solid black;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.show-books {
+  display: block;
+}
+
+.show-form {
+  display: flex;
+}
+
+.show-contact {
+  display: flex;
+}
+
+.remove-books {
+  display: none;
+}
+
+.error {
+  color: red;
+}
+
+.nav-header {
+  padding: 0 20px;
+}
