@@ -5,11 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <title>Awsome Books Application with ES6</title>
 </head>
 
 <body>
+    <!-- Header Section -->
+    <header class="header-section">
+        <div class="nav-header">
+            <p>Awsome Books</p>
+        </div>
+        <nav>
+            <ul>
+                <li class="links" id="bookList">List</li>
+                <li class="links" id="addBook">Add New</li>
+                <li class="links" id="contact">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="date-section" id="date-section">
 
+    </div>
+    <section class="bookdata" id="book-display">
+        <div id="display" class="dataForm">
+
+        </div>
+    </section>
+    <!-- book entry form -->
+    <section class="contactSec" id="books-form">
+        <h1>Add A New Book</h1>
+        <form action="#">
+            <input type="text" placeholder="Title" id="title" class="dataFields"><br />
+            <input type="text" placeholder="Author" id="author" class="dataFields"><br />
+            <button type="submit" id="submitbtn">Add</button>
+            <span id="emptySpan"></span>
+        </form>
+    </section>
+    <!-- Contact section -->
+    <section class="contact-section " id="contact-details">
+        <h1>Contact Information</h1>
+        <div>
+            <p>Do you have any questions or you just want to say "Hello" ?,br /> You can contact out of us!</p>
+            <ul>
+                <li>Our email mail@mail.com</li>
+                <li>Our Phone. no:00438652387</li>
+                <li>Our address: Streetname 22, 85403 City, Country</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer-section">
+        <p>Copyright ©...</p>
+    </footer>
+
+    <script type="module" src="./index.js"></script>
 </body>
 
 </html>
