@@ -7,7 +7,7 @@ import Display from './display.js';
 class Addbook {
   addBook = () => {
     let books = [];
-    let contentDiv;
+    let contentDiv = '';
     const title = bookTitle.value;
     const author = authorName.value;
 

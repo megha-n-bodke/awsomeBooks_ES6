@@ -1,4 +1,4 @@
-import { booklink, displayDiv, timeData } from './field-data.js';
+import { displayDiv } from './field-data.js';
 import Removebook from './removeBook.js';
 
 class Display {
@@ -6,7 +6,6 @@ class Display {
 
   display() {
     let books = [];
-    let contentDiv;
     if (localStorage.getItem('booksInfo')) {
       books = JSON.parse(localStorage.getItem('booksInfo'));
     } else {
