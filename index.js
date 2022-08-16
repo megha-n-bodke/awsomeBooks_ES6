@@ -3,12 +3,18 @@ import {
   contactLink,
   formlink,
   submitbtn,
-} from "./modules/field-data.js";
-import Addbook from "./modules/Addbook.js";
-import Display from "./modules/display.js";
+} from './modules/field-data.js';
+import Addbook from './modules/Addbook.js';
+import Display from './modules/display.js';
+import Navigation from './modules/navigation.js';
+import Displaytime from './modules/displayTime.js';
 
-document.addEventListener("DOMContentLoaded", () => {
-  submitbtn.addEventListener("click", () => {
+document.addEventListener('DOMContentLoaded', () => {
+  booklink.style.color = 'blue';
+  const dtime = new Displaytime();
+  dtime.getTimeData();
+
+  submitbtn.addEventListener('click', () => {
     const addBooks = new Addbook();
     addBooks.addBook();
   });
@@ -16,27 +22,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const displayBook = new Display();
   displayBook.display();
 
-  booklink.addEventListener("click", () => {
-    const book = new SingleBook();
+  booklink.addEventListener('click', () => {
+    const book = new Navigation();
     book.displayBooks();
   });
 
-  formlink.addEventListener("click", () => {
-    const book = new SingleBook();
+  formlink.addEventListener('click', () => {
+    const book = new Navigation();
     book.displayForm();
   });
 
-  contactLink.addEventListener("click", () => {
-    const book = new SingleBook();
+  contactLink.addEventListener('click', () => {
+    const book = new Navigation();
     book.displayContact();
   });
 });
-
-/* console.log(Object);
-alert(title);
- */
-
-/* 
-1. get elements file (DOM elements
-2.class file
-)*/
