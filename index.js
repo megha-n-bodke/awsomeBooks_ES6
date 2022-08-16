@@ -1,11 +1,35 @@
-import { msg } from "./modules/display.js";
-import Object from "./modules/object.js";
-import { bookTitle, authorName, submitbtn } from "./modules/field-data.js";
+import {
+  booklink,
+  contactLink,
+  formlink,
+  submitbtn,
+} from "./modules/field-data.js";
+import Addbook from "./modules/Addbook.js";
+import Display from "./modules/display.js";
 
-submitbtn.addEventListener("click", () => {
-  alert("btn clicked");
-  console.log(bookTitle.value);
-  console.log(authorName.value);
+document.addEventListener("DOMContentLoaded", () => {
+  submitbtn.addEventListener("click", () => {
+    const addBooks = new Addbook();
+    addBooks.addBook();
+  });
+
+  const displayBook = new Display();
+  displayBook.display();
+
+  booklink.addEventListener("click", () => {
+    const book = new SingleBook();
+    book.displayBooks();
+  });
+
+  formlink.addEventListener("click", () => {
+    const book = new SingleBook();
+    book.displayForm();
+  });
+
+  contactLink.addEventListener("click", () => {
+    const book = new SingleBook();
+    book.displayContact();
+  });
 });
 
 /* console.log(Object);
